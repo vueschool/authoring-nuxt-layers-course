@@ -1,13 +1,15 @@
-# Nuxt Layer Starter
+# Authoring Nuxt Layers: Build a Custom Email Layer
 
-Create Nuxt extendable layer with this GitHub template.
+[Source Code for the complete video course on vueschool.io.](https://vueschool.io/courses/authoring-nuxt-layers-build-a-custom-email-layer-2)
+
+[![Course Cover Image](https://vueschool.io/storage/media/ddf7bd8501fc518972e80ef2ba9387e8/Authoring-Nuxt-Layers-02.jpeg)](https://vueschool.io/courses/authoring-nuxt-layers-build-a-custom-email-layer-2)
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-pnpm install
+npm install
 ```
 
 ## Working on your layer
@@ -16,7 +18,7 @@ Your layer is at the root of this repository, it is exactly like a regular Nuxt 
 
 The `.playground` directory should help you on trying your layer during development.
 
-Running `pnpm dev` will prepare and boot `.playground` directory, which imports your layer itself.
+Running `npm run dev` will prepare and boot `.playground` directory, which imports your layer itself.
 
 ## Distributing your layer
 
@@ -38,8 +40,8 @@ Then add the dependency to their `extends` in `nuxt.config`:
 
 ```ts
 defineNuxtConfig({
-  extends: 'your-layer'
-})
+  extends: "your-layer",
+});
 ```
 
 ## Development Server
@@ -47,7 +49,7 @@ defineNuxtConfig({
 Start the development server on http://localhost:3000
 
 ```bash
-pnpm dev
+npm dev
 ```
 
 ## Production
@@ -55,19 +57,19 @@ pnpm dev
 Build the application for production:
 
 ```bash
-pnpm build
+npm build
 ```
 
 Or statically generate it with:
 
 ```bash
-pnpm generate
+npm generate
 ```
 
 Locally preview production build:
 
 ```bash
-pnpm preview
+npm preview
 ```
 
 Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
