@@ -4,5 +4,18 @@ export default defineNuxtConfig({
   $meta: {
     name: "my-layer",
   },
+  runtimeConfig: {
+    myLayer: {
+      privateOption: "123",
+    },
+  },
   modules: ["@nuxt/eslint"],
 });
+
+declare module "@nuxt/schema" {
+  interface RuntimeConfig {
+    myLayer?: {
+      privateOption: string;
+    };
+  }
+}
