@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   $meta: {
     name: "my-layer",
   },
+  extends: ["../layers/layer-2", "../layers/layer-3"],
   runtimeConfig: {
     myLayer: {
       privateOption: "123",
