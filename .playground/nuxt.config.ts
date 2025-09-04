@@ -1,7 +1,7 @@
 import { fileURLToPath } from "node:url";
 
 export default defineNuxtConfig({
-  extends: [".."],
+  extends: ["..", "../baseLayer"],
   modules: ["@nuxt/eslint"],
   runtimeConfig: {
     myLayer: {
