@@ -1,7 +1,7 @@
 {
-  "name": "my-nuxt-layer",
+  "name": "vs-example-nuxt-layer",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "main": "./nuxt.config.ts",
   "scripts": {
     "dev": "nuxi dev .playground",
@@ -12,13 +12,13 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@nuxt/eslint": "latest",
     "eslint": "^9.34.0",
     "nuxt": "^4.0.3",
     "typescript": "^5.9.2",
     "vue": "latest"
   },
   "dependencies": {
-    "hookable": "^5.5.3"
+    "hookable": "^5.5.3",
+    "@nuxt/eslint": "latest"
   }
 }
